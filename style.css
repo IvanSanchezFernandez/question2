@@ -1,0 +1,46 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#question1 {
+	margin-left: 10px;
+	margin-right: 10px;
+	background: aqua;
+	padding: 10px 20px 10px 20px;
+	width: 1100px;
+	border-radius: 20px;
+	float: left;
+}
+
+
+#button1 {
+	background: green;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .25s;
+	margin-top: 15px;
+}
+
+#button1:hover {
+	background: white;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+}
+
+#after_submitQ1 {
+	visibility: hidden;
+	background: #ff5459;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+
