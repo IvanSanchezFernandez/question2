@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+
+
+<title>EEG1 wake sleep stages</title>
+<link href = "EEG1_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG1_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG1: From nonsensical wavy lines to differentiating wake from sleep</h1>
+<p>EEG may appear to the untrained eye as a bunch of noisy lines from which no information can be extracted. 
+ A sort of Rorschach test with ambiguous inkblots where what is seen depends largely on what is already
+ in one's mind.</p>
+
+<figure>
+	<center><img id="rorschach1" src="img/rorschach1.jpg" width=250px heigth=250px>
+	<img id="rorschach2" src="img/rorschach2.jpg" width=250px heigth=250px>
+	<img id="rorschach3" src="img/rorschach3.jpg" width=250px heigth=250px>
+	<figcaption><b>Rorschach tests present symmetrical inkblots. Their interpretation is largely subjective.
+	</b></figcaption></center>
+</figure>
+
+
+<p>Fortunately, EEGs are not Rorschach tests and there is a lot of objective and useful information 
+ to be extracted from EEGs. Interpreting EEGs is all about pattern recognition.
+ Many EEG newbies typically struggle to identify these patterns and do not even know where to start.
+ This post will try to provide new EEG readers with some help on the most basic pattern recognition in 
+EEG: identifying wakefulness and the different stages of sleep. This will be a good starting point to
+ EEG reading.</p>
+
+
+<br>
+<p>First, the pictures below illustrate typical EEG tracings during wakefulness and different sleep stages
+ emphasizing their most relevant features. Then, there is a quiz to test and solidify that knowledge.
+ Finally, there is a summary of the most relevant features in this post.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>WAKEFULNESS</b></h2>
+<br>
+
+<figure>
+	<center><img id="wake1" src="img/wake1.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG during wakefulness.</b> Representative sample of EEG during wakefulness.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<p>Three main features that allow to identify wakefulness during an EEG are:</p>
+<figure>
+	<center><img id="eyeblink1" src="img/eyeblink1.png" width=1200px heigth=1000px>
+	<figcaption><b>Eyeblinks.</b> The retina is relatively negative compared to the cornea. When eyes close the
+	 eyeballs roll up in the Bell's phenomenon and the relatively positive cornea gets closer to the
+	 frontopolar (Fp1 and Fp2) electrodes. This positive polarity leads to a downward deflection on
+	 EEG. This EEG has several eyeblinks, some of them are easy to identify (red arrows). 
+	 Can you recognize the rest of eyeblinks?</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="muscle1" src="img/muscle1.png" width=1200px heigth=1000px>
+	<figcaption><b>Muscle artifact.</b> Muscle artifact is easy to identify as high-frequency
+	 sharp deflections that make the channels appear "darker".</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="PDR1" src="img/PDR1.png" width=1200px heigth=1000px>
+	<figcaption><b>Posterior dominant rhythm.</b> The posterior dominant rhythm is the idle
+	 rhythm of the visual cortex. That is, it is a rhythm that appears when the visual cortex
+	 is not active (typically, when eyes are closed and the patient is relaxed).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>DROWSINESS (NREM1)</b></h2>
+<br>
+
+<figure>
+	<center><img id="drowsiness1" src="img/drowsiness1.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG during drowsiness.</b> Representative sample of EEG during drowsiness
+	 (also known as non-REM sleep 1).</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<p>Vertex waves are the defining features of drowsiness:</p>
+
+<figure>
+	<center><img id="vertexwaves1" src="img/vertexwaves1.png" width=1200px heigth=1000px>
+	<figcaption><b>Vertex waves.</b> Vertex waves are the midline findings with a
+	 triangular shape. They are mostly centered at Cz and are typically symmetrical.
+	</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>STAGE II SLEEP (NREM2)</b></h2>
+<br>
+
+<figure>
+	<center><img id="NREM2" src="img/NREM2.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG during stage II sleep.</b> Representative sample of EEG during
+	 stage II sleep (also known as non-REM sleep 2).</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<p>Spindles are the defining features of stage II sleep. Vertex waves still appear in
+ stage II sleep:</p>
+
+<figure>
+	<center><img id="spindles1" src="img/spindles1.png" width=1200px heigth=1000px>
+	<figcaption><b>Spindles following vertex waves.</b> Spindles are the bursts of
+	 approximately 14 Hz highlighted by the red arrows. They are typically associated
+	 with vertex waves and they are typically symmetrical.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>STAGE III SLEEP (NREM3)</b></h2>
+<br>
+
+<figure>
+	<center><img id="NREM3" src="img/NREM3.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG during stage III sleep.</b> Representative sample of EEG during
+	 stage III sleep (also known as non-REM sleep 3).</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<p>Diffuse slow waves are the defining features of stage III sleep. Spindles still appear in
+ stage III sleep:</p>
+
+<figure>
+	<center><img id="slowwaves1" src="img/slowwaves1.png" width=1200px heigth=1000px>
+	<figcaption><b>Diffuse slow waves.</b> High-amplitude (high-voltage) slow waves
+	 are diffuse and generally symmetric. The red arrows point to a couple of examples of
+	 these slow waves.</figcaption></center>
+</figure>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<p><b>Identifying these relatively straightforward features will help you recognize the most important
+ stages of wakefulness and sleep:</b></p>
+<br>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<center><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"><b>Wakefulness</b></th>
+    <th class="tg-0lax"><b>Eyeblinks, posterior dominant rhythm, muscle artifact</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><b>Drowsiness</b></td>
+    <td class="tg-0lax"><b>Vertex waves, no spindles</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><b>Stage II sleep</b></td>
+    <td class="tg-0lax"><b>Spindles (vertex waves persist)</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><b>Stage III sleep</b></td>
+    <td class="tg-0lax"><b>Diffuse slow waves (spindles persist)</b></td>
+  </tr>
+</tbody>
+</table></center>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>QUESTIONS</b></h2>
+
+<br>
+<br>
+
+<form id="question1" name="question1">
+<p><b>Q1. What is the EEG stage showed in the EEG below?</b></p>
+<figure>
+	<img id="Q1_1" src="img/Q1.1.png">
+</figure>
+<br clear="all" />
+<input type="radio" id="q1" name="question" value="Wakefulness"> Wakefulness<br>
+<input type="radio" id="q1" name="question" value="NREM1"> Drowsiness (NREM1)<br>
+<input type="radio" id="q1" name="question" value="NREM2"> Stage II sleep (NREM2)<br>
+<input type="radio" id="q1" name="question" value="NREM3"> Stage III sleep (NREM3)<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>Q2. Check all the features you recognize in the EEG below:</b></p>
+<figure>
+	<img id="Q2_1" src="img/Q2.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q2PDR" name="question" value="PDR"> Posterior dominant rhythm<br>
+<input type="checkbox" id="q2S" name="question" value="Spindles"> Spindles<br>
+<input type="checkbox" id="q2EB" name="question" value="Eyeblinks"> Eyeblinks<br>
+<input type="checkbox" id="q2VW" name="question" value="Vertexwaves"> Vertex waves<br>
+<input type="checkbox" id="q2MA" name="question" value="Muscleartifact"> Muscle artifact<br>
+<input type="checkbox" id="q2DSW" name="question" value="Diffuseslowwaves"> Diffuse slow waves<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<figure>
+<img id="answerQ2_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question3" name="question3">
+<p><b>Q3. What is the EEG stage showed in the EEG below?</b></p>
+<figure>
+	<img id="Q3_1" src="img/Q3.1.png">
+</figure>
+<br clear="all" />
+<input type="radio" id="q3" name="question" value="Wakefulness"> Wakefulness<br>
+<input type="radio" id="q3" name="question" value="NREM1"> Drowsiness (NREM1)<br>
+<input type="radio" id="q3" name="question" value="NREM2"> Stage II sleep (NREM2)<br>
+<input type="radio" id="q3" name="question" value="NREM3"> Stage III sleep (NREM3)<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>Q4. Check all the correct statements regarding the EEG below:</b></p>
+<figure>
+	<img id="Q4_1" src="img/Q4.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q4PDR" name="question" value="PDR"> There is a posterior dominant rhythm. This segment is most likely wakefulness<br>
+<input type="checkbox" id="q4SNOVW" name="question" value="SNOVW"> There are spindles, but no vertex waves. This segment is most likely stage III sleep<br>
+<input type="checkbox" id="q4S" name="question" value="S"> There are spindles. This segment is most likely stage II sleep<br>
+<input type="checkbox" id="q4MA" name="question" value="MA"> There is muscle artifact. This segment is most likely wakefulness<br>
+<input type="checkbox" id="q4VW" name="question" value="VW"> There are vertex waves. This segment can be stage I or stage II sleep<br>
+<input id="buttonQ4" type="button" value="Done!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<figure>
+<img id="answerQ4_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question5" name="question5">
+<p><b>Q5. What is the EEG stage showed in the EEG below?</b></p>
+<figure>
+	<img id="Q5_1" src="img/Q5.1.png">
+</figure>
+<br clear="all" />
+<input type="radio" id="q5" name="question" value="Wakefulness"> Wakefulness<br>
+<input type="radio" id="q5" name="question" value="NREM1"> Drowsiness (NREM1)<br>
+<input type="radio" id="q5" name="question" value="NREM2"> Stage II sleep (NREM2)<br>
+<input type="radio" id="q5" name="question" value="NREM3"> Stage III sleep (NREM3)<br>
+<input id="buttonQ5" type="button" value="Done!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<figure>
+<img id="answerQ5_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ5_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question6" name="question6">
+<p><b>Q6. What is the EEG stage showed in the EEG below?</b></p>
+<figure>
+	<img id="Q6_1" src="img/Q6.1.png">
+</figure>
+<br clear="all" />
+<input type="radio" id="q6" name="question" value="Wakefulness"> Wakefulness<br>
+<input type="radio" id="q6" name="question" value="NREM1"> Drowsiness (NREM1)<br>
+<input type="radio" id="q6" name="question" value="NREM2"> Stage II sleep (NREM2)<br>
+<input type="radio" id="q6" name="question" value="NREM3"> Stage III sleep (NREM3)<br>
+<input id="buttonQ6" type="button" value="Done!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<figure>
+<img id="answerQ6_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ6_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question7" name="question7">
+<p><b>Q7. Check all the correct statements regarding the EEG below:</b></p>
+<figure>
+	<img id="Q7_1" src="img/Q7.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q7PDR" name="question" value="PDR"> There is a posterior dominant rhythm<br>
+<input type="checkbox" id="q7SNOVW" name="question" value="SNOVW"> There are spindles, but no vertex waves<br>
+<input type="checkbox" id="q7S" name="question" value="S"> There are sleep spindles<br>
+<input type="checkbox" id="q7NREMIII" name="question" value="NREMIII"> This EEG segment is most likely stage III sleep<br>
+<input type="checkbox" id="q7EB" name="question" value="EB"> There are eyeblinks<br>
+<input type="checkbox" id="q7W" name="question" value="W"> This segment is most likely wakefulness<br>
+<input type="checkbox" id="q7VW" name="question" value="VW"> There are vertex waves<br>
+<input id="buttonQ7" type="button" value="Done!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<figure>
+<img id="answerQ7_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question8" name="question8">
+<p><b>Q8. What is the EEG stage showed in the EEG below?</b></p>
+<figure>
+	<img id="Q8_1" src="img/Q8.1.png">
+</figure>
+<br clear="all" />
+<input type="radio" id="q8" name="question" value="Wakefulness"> Wakefulness<br>
+<input type="radio" id="q8" name="question" value="NREM1"> Drowsiness (NREM1)<br>
+<input type="radio" id="q8" name="question" value="NREM2"> Stage II sleep (NREM2)<br>
+<input type="radio" id="q8" name="question" value="NREM3"> Stage III sleep (NREM3)<br>
+<input id="buttonQ8" type="button" value="Done!" onclick="checkQ8();">
+</form>
+
+<div id="after_submitQ8">
+<p id="answerQ8"></p>
+<br>
+<figure>
+<img id="answerQ8_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ8_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question9" name="question9">
+<p><b>Q9. What is the EEG stage showed in the EEG below?</b></p>
+<figure>
+	<img id="Q9_1" src="img/Q9.1.png">
+</figure>
+<br clear="all" />
+<input type="radio" id="q9" name="question" value="Wakefulness"> Wakefulness<br>
+<input type="radio" id="q9" name="question" value="NREM1"> Drowsiness (NREM1)<br>
+<input type="radio" id="q9" name="question" value="NREM2"> Stage II sleep (NREM2)<br>
+<input type="radio" id="q9" name="question" value="NREM3"> Stage III sleep (NREM3)<br>
+<input id="buttonQ9" type="button" value="Done!" onclick="checkQ9();">
+</form>
+
+<div id="after_submitQ9">
+<p id="answerQ9"></p>
+<br>
+<figure>
+<img id="answerQ9_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ9_picture"></p>
+</div>
+
+
+
+</body>
+
+</html>
